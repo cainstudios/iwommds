@@ -1,7 +1,7 @@
 {
-  "name": "wtf-iwommds",
+  "name": "iwommds",
   "description": "What the fun! It works on my manchine design system",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
