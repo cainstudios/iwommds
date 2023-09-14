@@ -9,5 +9,23 @@
  */
 
 {
+    "apps/to-do": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "my-scope/apps/to-do",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "hello-world": {
+        "scope": "",
+        "version": "",
+        "mainFile": "hello-world.ts",
+        "rootDir": "hello-world"
+    },
     "$schema-version": "16.0.0"
 }
