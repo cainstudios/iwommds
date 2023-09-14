@@ -9,6 +9,7 @@
  */
 
 {
+<<<<<<< HEAD
     "apps/greetings": {
         "scope": "",
         "version": "",
@@ -22,6 +23,8 @@
             }
         }
     },
+=======
+>>>>>>> 0a7fe34c5b479594c66f8ec38571a92c540ac9a0
     "apps/to-do": {
         "scope": "",
         "version": "",
