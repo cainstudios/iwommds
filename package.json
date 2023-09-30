@@ -1,6 +1,6 @@
 {
   "name": "iwommds",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "What the fun! It works on my manchine design system",
   "repository": "https://github.com/cainstudios/iwommds",
   "main": "dist/cjs/index.js",
