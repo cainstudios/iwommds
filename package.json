@@ -10,7 +10,8 @@
     "test": "jest",
     "build": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "tailwindCSS": "pnpm dlx tailwindcss -i ./src/style/tailwind-input.css -o ./src/style/tailwind-output.css --watch"
   },
   "keywords": [
     "demo",
