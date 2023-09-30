@@ -1,7 +1,7 @@
 {
-  "name": "@timonwa/demo-ui-library",
-  "version": "1.0.0",
-  "description": "A demo on how to create a React UI component library using React, Typescript, Rollup, Storybook, Jest and React testing library.",
+  "name": "iwommds",
+  "version": "0.1.4",
+  "description": "What the fun! It works on my manchine design system",
   "repository": "https://github.com/cainstudios/iwommds",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -16,13 +16,7 @@
     "demo",
     "ui",
     "react",
-    "library",
-    "tutorial",
-    "learning",
-    "educational",
-    "example",
-    "beginner-friendly",
-    "practice"
+    "library"
   ],
   "author": "TC Allos",
   "license": "MIT",
