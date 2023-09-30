@@ -1,24 +1,23 @@
 import React from "react";
-
 import styled from "styled-components";
 import { ButtonProps } from "./Button.types";
 
-const StyleButton = styled.button<ButtonProps>`
-border:0;
-line-height:1;
-font-size:15px;
-cursor:pointer;
-font-weight:700;
-font weight:bold;
-border-radius:3px;
-display: inline-block;
-padding: ${(props) =>
-  props.size === "small"
-    ? "7px 25px 8px"
-    : props.size === "medium"
-    ? "9px 30px 11px"
-    : "14px 30px 16px"};
-    color: ${(props) => (props.primary ? "#1b116e" : "#ffffff")};
+const StyledButton = styled.button<ButtonProps>`
+  border: 0;
+  line-height: 1;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-weight: bold;
+  border-radius: 3px;
+  display: inline-block;
+  padding: ${(props) =>
+    props.size === "small"
+      ? "7px 25px 8px"
+      : props.size === "medium"
+      ? "9px 30px 11px"
+      : "14px 30px 16px"};
+  color: ${(props) => (props.primary ? "#1b116e" : "#ffffff")};
   background-color: ${(props) => (props.primary ? "#6bedb5" : "#1b116e")};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   &:hover {
@@ -44,16 +43,15 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <StyleButton
+    <StyledButton
       type="button"
       onClick={onClick}
       primary={primary}
       disabled={disabled}
       size={size}
-      {...props}
-    >
+      {...props}>
       {text}
-    </StyleButton>
+    </StyledButton>
   );
 };
 
