@@ -1,0 +1,21 @@
+import React from 'react';
+import {{name}} from './index.jsx';
+
+// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+export default {
+title: 'Components/{{name}}',
+component: {{name}},
+// More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+argTypes: {},
+};
+
+// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+const Template = (args) => <div>
+    <{{name}} {...args} />
+</div>;
+
+export const Simple = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Simple.args = {
+sampleProp:5,
+};
