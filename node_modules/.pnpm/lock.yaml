@@ -36,6 +36,7 @@ specifiers:
   rollup-plugin-dts: ^5.3.0
   rollup-plugin-peer-deps-external: ^2.2.4
   rollup-plugin-terser: ^7.0.2
+  sass: ^1.68.0
   storybook: 7.0.8
   styled-components: ^5.3.10
   tailwindcss: ^3.3.3
@@ -56,7 +57,7 @@ devDependencies:
   '@storybook/addon-interactions': 7.0.8_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-links': 7.0.8_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-onboarding': 1.0.8_biqbaboplfbrettd7655fr4n2y
-  '@storybook/addon-styling': 1.3.7_huuungu4gsdmckjor7uj25pzfm
+  '@storybook/addon-styling': 1.3.7_d2l6rgxl6xvozl2rrsg3hjgcjm
   '@storybook/blocks': 7.0.8_biqbaboplfbrettd7655fr4n2y
   '@storybook/react': 7.0.8_vegmnuvoswdxuttpuhvewcem44
   '@storybook/react-vite': 7.4.5_dchwxdzbkwe7sbx4h2wip54c2u
@@ -80,6 +81,7 @@ devDependencies:
   rollup-plugin-dts: 5.3.1_l4fljcgb4axropyhxgkrxv7q34
   rollup-plugin-peer-deps-external: 2.2.4_rollup@3.29.4
   rollup-plugin-terser: 7.0.2_rollup@3.29.4
+  sass: 1.68.0
   storybook: 7.0.8
   tailwindcss: 3.3.3
   typescript: 5.2.2
@@ -3188,7 +3190,7 @@ packages:
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2_typescript@5.2.2
       typescript: 5.2.2
-      vite: 4.4.9_less@4.2.0
+      vite: 4.4.9_less@4.2.0+sass@1.68.0
     dev: true
 
   /@jridgewell/gen-mapping/0.3.3:
@@ -4215,7 +4217,7 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
-  /@storybook/addon-styling/1.3.7_huuungu4gsdmckjor7uj25pzfm:
+  /@storybook/addon-styling/1.3.7_d2l6rgxl6xvozl2rrsg3hjgcjm:
     resolution: {integrity: sha512-JSBZMOrSw/3rlq5YoEI7Qyq703KSNP0Jd+gxTWu3/tP6245mpjn2dXnR8FvqVxCi+FG4lt2kQyPzgsuwEw1SSA==}
     hasBin: true
     peerDependencies:
@@ -4256,7 +4258,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       resolve-url-loader: 5.0.0
-      sass-loader: 13.3.2_webpack@5.88.2
+      sass-loader: 13.3.2_sass@1.68.0+webpack@5.88.2
       style-loader: 3.3.3_webpack@5.88.2
       webpack: 5.88.2_esbuild@0.17.19
     transitivePeerDependencies:
@@ -4454,7 +4456,7 @@ packages:
       remark-slug: 6.1.0
       rollup: 3.29.4
       typescript: 5.2.2
-      vite: 4.4.9_less@4.2.0
+      vite: 4.4.9_less@4.2.0+sass@1.68.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -5173,7 +5175,7 @@ packages:
       react: 18.2.0
       react-docgen: 6.0.0-alpha.3
       react-dom: 18.2.0_react@18.2.0
-      vite: 4.4.9_less@4.2.0
+      vite: 4.4.9_less@4.2.0+sass@1.68.0
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -5882,7 +5884,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.22.5_@babel+core@7.23.0
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.4.9_less@4.2.0
+      vite: 4.4.9_less@4.2.0+sass@1.68.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -8841,6 +8843,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /immutable/4.3.4:
+    resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==}
+    dev: true
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -11878,7 +11884,7 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass-loader/13.3.2_webpack@5.88.2:
+  /sass-loader/13.3.2_sass@1.68.0+webpack@5.88.2:
     resolution: {integrity: sha512-CQbKl57kdEv+KDLquhC+gE3pXt74LEAzm+tzywcA0/aHZuub8wTErbjAoNI57rPUWRYRNC5WUnNl8eGJNbDdwg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -11898,7 +11904,18 @@ packages:
         optional: true
     dependencies:
       neo-async: 2.6.2
+      sass: 1.68.0
       webpack: 5.88.2_esbuild@0.17.19
+    dev: true
+
+  /sass/1.68.0:
+    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.4
+      source-map-js: 1.0.2
     dev: true
 
   /sax/1.3.0:
@@ -12939,7 +12956,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite/4.4.9_less@4.2.0:
+  /vite/4.4.9_less@4.2.0+sass@1.68.0:
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -12971,6 +12988,7 @@ packages:
       less: 4.2.0
       postcss: 8.4.31
       rollup: 3.29.4
+      sass: 1.68.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true

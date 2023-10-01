@@ -538,6 +538,10 @@ video {
   display: inline-block;
 }
 
+.flex {
+  display: flex;
+}
+
 .contents {
   display: contents;
 }
